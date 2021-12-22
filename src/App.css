@@ -1,0 +1,111 @@
+body {
+  margin: auto;
+  width: 50%;
+}
+
+h1 {
+  font-weight: lighter;
+  color: #01131a;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.FilterTextBox {
+  width: 200px;
+  margin-left: 10px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.UserItem {
+  background-color: white-color;
+  height: 140px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2px;
+  margin-left: 10px;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.UserItemLeftSection img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.UserItemLeftSection {
+  display: inline-block;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.UserItemRightSection {
+  color: #03074e;
+  display: inline-block;
+  margin-top: 10px;
+  position: absolute;
+  font-weight: lighter;
+}
+
+.UserName .innerText {
+  font-size: 22px;
+}
+
+.UserEmail .innerText {
+  font-size: 12px;
+}
+
+.UserPhone .innerText {
+  font-size: 12px;
+}
+
+.UserCompany .innerText {
+  font-size: 13px;
+}
+
+.Loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #36862c;
+  -webkit-animation: goRound 1s linear infinite;
+  animation: goRound 1s linear infinite;
+}
+
+@-webkit-keyframes goRound {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes goRound {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: auto;
+    width: 90%;
+  }
+}
